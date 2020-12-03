@@ -1,3 +1,5 @@
+#Se debe refactorizar el siguiente código
+
 class Person
   def initialize(first, last, age, type)
     @first_name = first
@@ -29,6 +31,18 @@ class Person
 end
 
 #Refactorización de código
+
+class Person
+  def initialize(first, last, age, type)
+    @first_name = first
+    @last_name = last
+    @age = age
+    @type = type
+  end
+  def birthday
+    @age += 1
+  end
+end
 
 class Student < Person
   def talk
