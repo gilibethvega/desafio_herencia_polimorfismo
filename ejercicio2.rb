@@ -41,8 +41,8 @@ module Alimentacion
 end
 
 class Animal
-  attr_reader nombre
-  def initialize
+  attr_reader :nombre
+  def initialize(nombre)
     @nombre = nombre
   end
 end
@@ -109,6 +109,7 @@ class Abeja < Insecto
   include Herbivoro
 end
 
-puts vaca_blue = Vaca.new("Blue")
-puts vaca_blue.caminar
-puts vaca_blue.comer
+puts pinguino_1 = Pinguino.new("Blue")
+puts pinguino_1.caminar
+puts pinguino_1.nadar
+puts pinguino_1.comer
